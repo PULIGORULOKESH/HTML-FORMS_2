@@ -1,0 +1,126 @@
+body {
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  @import url("https://fonts.cdnfonts.com/css/samsung-sans-4");
+  font-family: "Samsung Sans", sans-serif;
+}
+
+#header:hover {
+  background-clip: text;
+  background: #e01212;
+  background: linear-gradient(
+    90deg,
+    rgb(121, 10, 10) 0%,
+    rgb(40, 53, 22) 35%,
+    rgb(236, 4, 248) 59%,
+    rgb(102, 255, 0) 81%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  background-clip: text;
+  color: transparent;
+}
+
+form {
+  width: 500px;
+}
+
+fieldset {
+  border: 3px solid aquamarine;
+  border-radius: 6px;
+}
+
+input:required {
+  border: 2px dotted green;
+}
+
+input:optional {
+  border: 2px dashed blue;
+}
+
+input:read-only {
+  background-color: green;
+  color: goldenrod;
+}
+
+input[type="radio"]:checked {
+  width: 20px;
+  height: 20px;
+}
+
+input[type="radio"]:checked + label {
+  color: red;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  border: 3px solid crimson;
+}
+
+input[type="reset"] {
+  border-radius: 5px;
+  border: 3px solid crimson;
+}
+
+select {
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: cyan;
+}
+
+input[type="text"] + span {
+  display: none;
+}
+
+input[type="text"]:hover + span {
+  display: inline;
+}
+
+input[type="tel"] + span {
+  display: none;
+}
+
+input[type="tel"]:hover + span {
+  display: inline;
+}
+
+input[type="email"] + span {
+  display: none;
+}
+
+input[type="email"]:hover + span {
+  display: inline;
+}
+
+input[type="password"] + span {
+  display: none;
+}
+
+input[type="password"]:hover + span {
+  display: inline;
+}
+
+img {
+  display: none;
+}
+
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="email"]:focus:valid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+
+    
